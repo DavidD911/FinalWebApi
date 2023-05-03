@@ -1,0 +1,17 @@
+.img {
+  width: 100%;
+  background-size: contain;
+  right: 0px;
+  position: relative;
+  border-radius: 25px;
+  height: 7rem;
+}
+
+.card {
+  border-style: solid;
+  width: 20rem;
+  height: 7rem;
+  border-color: gray;
+  border-radius: 25px;
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+.loading-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50%;
+}
+
+.loading-page h1 {
+  position: relative;
+  margin-right: 5%;
+}
+
+.loadingpage-progress-bar {
+  width: 200px;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.loadingpage-progress-bar:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #06c;
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: progress 2s ease-in-out infinite;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
