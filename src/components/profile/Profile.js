@@ -72,6 +72,10 @@ const Profile = () => {
     navigate("/Addclass");
   };
 
+  const handleDeleteClass = () => {
+    navigate("/editclass");
+  }
+
   if (isLoading) {
     return <p>Loading...</p>;
   }
@@ -128,7 +132,7 @@ const Profile = () => {
               </button>
               <button
                   className="big-button delete-button"
-                  onClick={handleAddClass}
+                  onClick={handleDeleteClass}
               >
                 Delete Class
               </button>
