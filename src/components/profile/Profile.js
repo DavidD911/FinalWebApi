@@ -58,7 +58,7 @@ const Profile = () => {
       );
       // Filter out the deleted user from the state
       setUsers(users.filter((user) => user.userId !== userId));
-      window.location.reload();
+      navigate("/profile");
     } catch (error) {
       if (error.response && error.response.status === 401) {
         setError("Unauthorized");
@@ -74,7 +74,7 @@ const Profile = () => {
 
   const handleDeleteClass = () => {
     navigate("/editclass");
-  }
+  };
 
   if (isLoading) {
     return <p>Loading...</p>;
